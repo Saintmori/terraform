@@ -1,4 +1,4 @@
-output "load_balancer_dns_name" {
-    value = aws_lb.class_task_lb.dns_name   # Refrence
-    description = "This is the dns_name of the load balancer"
+output "public_instance_private_ip" {
+  value       = aws_instance.class_task_instance.public_ip # Refrence
+  description = "this is the ip address of the instance"
 }
